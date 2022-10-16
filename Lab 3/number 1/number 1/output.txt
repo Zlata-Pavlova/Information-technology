@@ -1,0 +1,10 @@
+array_int[0] = 32; array_double[0] = 7.204199
+array_int[1] = 24; array_double[1] = 5.154271
+array_int[2] = 28; array_double[2] = 7.181219
+array_int[3] = 30; array_double[3] = 5.462172
+array_int[4] = 28; array_double[4] = 6.123844
+array_int[5] = 31; array_double[5] = 5.343425
+array_int[6] = 37; array_double[6] = 7.295938
+array_int[7] = 35; array_double[7] = 6.032014
+array_int[8] = 34; array_double[8] = 5.545488
+array_int[9] = 33; array_double[9] = 6.850887
