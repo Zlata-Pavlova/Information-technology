@@ -41,6 +41,7 @@ int GetSumInCol(int** matrix, int row, int colIndex)
 
 int main()
 {
+	// Указатель на двумерный массив
 	int** matrix;
 	int* minsRows;
 	int* sumCols;

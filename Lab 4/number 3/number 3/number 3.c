@@ -17,6 +17,7 @@ int main()
 	int** matrix;
 	int* maxCols;
 	int col, row;
+	int res = 1;
 	printf("Cols count: ");
 	scanf("%d", &col);
 	printf("Rows count: ");
@@ -33,6 +34,7 @@ int main()
 	{
 		for (int j = 0; j < col; j++)
 		{
+			// Генерация случайного числа
 			matrix[i][j] = -MAX + (rand() % (MAX * 2 + 1));
 			printf("%4d", matrix[i][j]);
 		}
@@ -43,11 +45,13 @@ int main()
 	for (int i = 0; i < col; i++)
 	{
 		maxCols[i] = GetMaxInCol(matrix, row, i);
+		res *= maxCols[i];
 	}
 
 	printf("\n");
 	for (int j = 0; j < col; j++)
 		printf("%4d", maxCols[j]);
-
+	printf("\n");
+	printf("Result = %d", res);
 	return 0;
 }
