@@ -31,11 +31,15 @@ int main()
 		max = tmp;
 	}
 	printf("%d %d\n", min, max);
-	for (int i = min + 1; i < min + ((max - min + 1) / 2); i++)
+	min++;
+	max--;
+	while (min < max)
 	{
-		tmp = array[i];
-		array[i] = array[max - i - 1];
-		array[max - i - 1] = tmp;
+		tmp = array[min];
+		array[min] = array[max];
+		array[max] = tmp;
+		min++;
+		max--;
 	}
 
 	for (int i = 0; i < size; i++)
