@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <Windows.h>
-#define SIZE 1024
+#define LENGTH 1024
 
 int main()
 {
@@ -11,8 +11,8 @@ int main()
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
-	char strings[3][SIZE];
-	char newStrings[100][SIZE] = { 0 };
+	char strings[3][LENGTH];
+	char newStrings[10][LENGTH] = { 0 };
 	int n = 0;
 	gets(strings[0]);
 	gets(strings[1]);
