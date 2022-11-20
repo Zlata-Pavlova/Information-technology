@@ -21,7 +21,7 @@ int getMinMod3Row(double matr[N][N])
 			}
 		}
 	}
-	return minI;
+	return abs(matr[minI][minJ]);
 }
 
 int getSumLastDigitsEvenValues(double matr[N][N])
