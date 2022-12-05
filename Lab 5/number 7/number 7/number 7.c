@@ -12,11 +12,17 @@ int main()
 {
 	char line[LENGTH] = " hello, world! hey";
 	int i = 0;
-	while (i < strlen(line))
+	while (line[i] != 0)
 	{
-		if (isLetter(line[i]))
+		while (!isLetter(line[++i]));
+		if (line[i] != 0)
 		{
-
+			while (line[i] != 0 && isLetter(line[i]))
+			{
+				printf("%c", line[i]);
+				i++;
+			}
+			printf("\n");
 		}
 	}
 	return 0;
